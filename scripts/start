@@ -1,0 +1,9 @@
+#!/bin/bash 
+
+if [ -e "/minecraft/start" ]; then
+  echo "Starting Minecraft server..."
+  /minecraft/start
+else
+  echo "No start script found, sleeping forever..."
+  sleep infinity
+fi
